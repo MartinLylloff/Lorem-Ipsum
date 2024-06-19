@@ -19,21 +19,19 @@ const App = () => {
 
   return (
     <section className="section-center">
-      <h2>Tired of boring Lorem Ipsum?</h2>
+      <h4>Tired of boring Lorem Ipsum?</h4>
       <form className="lorem-form" onSubmit={handleSubmit}>
-        <div className="form-row">
-          <label className="form-label" htmlFor=""></label>
-          <input
-            className="form-input"
-            type="number"
-            name="counter"
-            id="counter"
-            min={1}
-            max={8}
-            value={counter}
-            onChange={handleCounter}
-          />
-        </div>
+        <label htmlFor="">Paragraphs:</label>
+        <input
+          className="form-input"
+          type="number"
+          name="counter"
+          id="counter"
+          min={1}
+          max={8}
+          value={counter}
+          onChange={handleCounter}
+        />
         <button type="submit" className="btn">
           Submit
         </button>
